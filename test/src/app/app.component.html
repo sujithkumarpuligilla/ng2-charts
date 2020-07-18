@@ -1,0 +1,83 @@
+<div class="container">
+  <ul class="nav nav-tabs">
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/pie-chart">Pie Chart</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" routerLink="/bar-chart">Bar Chart</a>
+    </li> 
+    <li class="nav-item">
+        <a class="nav-link" routerLink="/line-chart">Line Chart</a>
+    </li>   
+  </ul>
+    <div class="form-group row">
+        <div class="col-md-6 jan">
+            <div>
+              <b>Select monthly revenue</b>
+            </div>
+            <label name="jan"><b>January</b></label>
+            <input class="form-control jan" name="jan"id="jan" type="text">
+        </div>
+         
+          <div class="col-md-6 jancolor">
+              <div>
+                  <b>Select Color</b>
+                </div>
+            <label name="Color"><b>Color</b></label>
+            <select class="form-control jancolor" id="jancolor">
+              <option>Green</option>
+              <option>Blue</option>
+              <option>Yellow</option>
+            </select>
+          </div>
+
+          <div class="col-md-6 Feb">
+              <label name="feb"><b>February</b></label>
+              <input class="form-control feb" id="feb" type="text">
+          </div>
+          <div class="col-md-6 febcolor">
+            <label name="Color"><b>Color</b></label>
+            <select class="form-control febcolor" id="febcolor">
+              <option>Green</option>
+              <option>Blue</option>
+              <option>Yellow</option>
+            </select>
+          </div>
+         
+          <div class="col-md-6 mar">
+              <label name="mar"><b>March</b></label>
+              <input class="form-control" id="mar" type="text">
+          </div>
+          <div class="col-md-6 marcolor">
+            <label name="Color"><b>Color</b></label>
+            <select class="form-control marcolor " id="sel1">
+              <option>Green</option>
+              <option>Blue</option>
+              <option>Yellow</option>
+            </select>
+          </div>
+          <span></span>
+            <!-- <div class="radio graphtype">
+                <p><b>Graphtype</b></p>
+                  <div class="radio pie">
+                      <label><input type="radio" routerLink="/Pie-chart" name=" optradio"checked> 
+                        <a class="nav-link" routerLink="/Pie-chart"> Pie</a></label>
+                  </div>
+                  <div class="radio bar">
+                    <label><input type="radio"routerLink="/Bar-chart"  name=" optradio">  
+                      <a class="nav-link"  routerLink="/Bar-chart">  Bar</a></label>
+                  </div>
+                  <div class="radio Line">
+                      <label><input type="radio" routerLink="/Line-chart"  name=" optradio">  
+                        <a class="nav-link" routerLink="/Line-chart"> Line</a></label>
+                    </div>
+
+            </div> -->
+
+
+
+           
+  <div>
+      <router-outlet></router-outlet>
+  </div>  
+</div>
